@@ -1,0 +1,7 @@
+.current {
+    color: $accent-color;
+  
+    &::after {
+    transform: scaleY(1);
+  }
+}

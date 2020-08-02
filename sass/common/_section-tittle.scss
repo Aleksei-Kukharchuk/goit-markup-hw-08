@@ -1,0 +1,14 @@
+.section-tittle {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.7;
+  
+    color: $tittle-color;
+
+      @media screen and (min-width:1200px) {
+        margin-bottom: 50px;
+      }
+  }

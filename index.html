@@ -21,94 +21,108 @@
         <a href="./index.html" class="logo"
           >Web <span style="color: black;">Studio</span></a
         >
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="./index.html" class="header__link current">Студия</a>
-            </li>
-            <li class="header__item">
-              <a href="./portfolio.html" class="header__link">Портфолио</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__link">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-        <address class="address">
-          <a href="mailto:info@devstudio.com" class="address__mail">
-            <svg class="envelope">
-              <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>info@devstudio.com</a>
-          <a href="tel:+380961111111" class="address__phone">
-            <svg class="smartphone">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>+38 096 111 11 11</a>
-        </address>
+          <nav class="header__nav" id="header__nav" data-menu>
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="./index.html" class="header__link current">Студия</a>
+              </li>
+              <li class="header__item">
+                <a href="./portfolio.html" class="header__link">Портфолио</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__link">Контакты</a>
+              </li>
+            </ul>
+
+            <address class="address">
+              <a href="mailto:info@devstudio.com" class="address__mail">
+                <svg class="address__envelope">
+                  <use href="./images/symbol-defs.svg#icon-envelope"></use>
+                </svg>info@devstudio.com</a>
+              <a href="tel:+380961111111" class="address__phone">
+                <svg class="address__smartphone">
+                  <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+                </svg>+38 096 111 11 11</a>
+            </address>
+          </nav>
+        
+        <button type="menu" 
+          class="nav__button" 
+          aria-expanded="false" 
+          aria-controls="header__nav"
+          data-menu-button>
+          <svg class="nav__icon" aria-label="Переключатель мобильного меню">
+            <use class='icon-menu' href="./images/symbol-defs.svg#icon-menu"></use>
+            <use class='icon-close' href="./images/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
       <!--Блок "Закзать услугу"-->
       <section class="order">
-        <h1 class="order__tittle">
-          ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
-          ДЛЯ ВАШЕГО БИЗНЕСА
-        </h1>
-        <button type="button" class="button" data-modal-open>
-          Заказать услугу
-        </button>
+        <div class="container">
+          <h1 class="order__tittle">
+            ЭФФЕКТИВНЫЕ РЕШЕНИЯ<br />
+            ДЛЯ ВАШЕГО БИЗНЕСА
+          </h1>
+          <button type="button" class="button" data-modal-open>
+            Заказать услугу
+          </button>
+        </div>
       </section>
       <!--Блок "Преимуществ"-->
       <section class="advantages">
         <div class="container">
           <ul class="advantages__list">
-            <li class="advantages__item advantages-item">
+            <li class="advantages__item">
               
-              <div class="advantages-item__wrapper">
+              <div class="advantages__wrapper">
                 
-                <svg class="advantages-item__icon" viewBox="0 0 32 32">
+                <svg class="advantages__icon">
                   <use xlink:href="./images/symbol-defs.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="advantages-item__tittle">Внимание к деталям</h3>
-              <p class="advantages-item__text">
+              <h3 class="advantages__tittle">Внимание к деталям</h3>
+              <p class="advantages__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="advantages__item advantages-item">
-              <div class="advantages-item__wrapper">
-                <svg class="advantages-item__icon">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <svg class="advantages__icon">
                   <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="advantages-item__tittle">Пунктуальность</h3>
-              <p class="advantages-item__text">
+              <h3 class="advantages__tittle">Пунктуальность</h3>
+              <p class="advantages__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="advantages__item advantages-item">
-              <div class="advantages-item__wrapper">
-                <svg class="advantages-item__icon">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <svg class="advantages__icon">
                   <use href="./images/symbol-defs.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="advantages-item__tittle">Планирование</h3>
-              <p class="advantages-item__text">
+              <h3 class="advantages__tittle">Планирование</h3>
+              <p class="advantages__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="advantages__item advantages-item">
-              <div class="advantages-item__wrapper">
-                <svg class="advantages-item__icon">
+            <li class="advantages__item">
+              <div class="advantages__wrapper">
+                <svg class="advantages__icon">
                   <use href="./images/symbol-defs.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="advantages-item__tittle">
+              <h3 class="advantages__tittle">
                 Современные технологии
               </h3>
-              <p class="advantages-item__text">
+              <p class="advantages__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -123,25 +137,37 @@
           <ul class="activity__list">
             <li class="activity__item">
               <img
-                src="./images/what-we-do/box-1.jpg"
+                srcset="
+                ./images/what-we-do/box-1-370.jpg 370w,
+                ./images/what-we-do/box-1-740.jpg 740w"
+                src="./images/what-we-do/box-1-370.jpg 370w"
                 alt="Десктопные приложения"
-                width="100%"
+                sizes="370px"
+                class="activity__img"
               />
               <h3 class="activity__tittle">Десктопные приложения</h3>
             </li>
             <li class="activity__item">
               <img
-                src="./images/what-we-do/box-2.jpg"
+                srcset="
+                ./images/what-we-do/box-2-370.jpg 370w,
+                ./images/what-we-do/box-2-740.jpg 740w"
+                src="./images/what-we-do/box-2-370.jpg 370w"
                 alt="Мобильные приложения"
-                width="100%"
+                sizes="370px"
+                class="activity__img"
               />
               <h3 class="activity__tittle">Мобильные приложения</h3>
             </li>
             <li class="activity__item">
               <img
-                src="./images/what-we-do/box-3.jpg"
+                srcset="
+                ./images/what-we-do/box-3-370.jpg 370w,
+                ./images/what-we-do/box-3-740.jpg 740w"
+                src="./images/what-we-do/box-3-370.jpg 370w"
                 alt="Дизайнерские решения"
-                width="100%"
+                sizes="370px"
+                class="activity__img"
               />
               <h3 class="activity__tittle">Дизайнерские решения</h3>
             </li>
@@ -153,15 +179,22 @@
         <div class="container team__container">
           <h2 class="section-tittle">Наша команда</h2>
           <ul class="team__list">
-            <li class="team__item team-item">
+            <li class="team__item">
               <img
-                src="./images/team/john-smith.jpg"
-                alt="John Smith"
-                width="100%"
-                class="team-item__img"
+                srcset="
+                ./images/team/desktop/kucherenko-270.jpg 270w,
+                ./images/team/desktop/kucherenko-540.jpg 540w,
+                ./images/team/tablet/kucherenko-354.jpg 354w,
+                ./images/team/tablet/kucherenko-708.jpg 708w,
+                ./images/team/mobile/kucherenko-450.jpg 450w,
+                ./images/team/mobile/kucherenko-900.jpg 900w"
+                src="./images/team/desktop/kucherenko-270.jpg"
+                alt="Николай Кучеренко"
+                class="team__img"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 270px"
               />
-              <h3 class="team-item__name">Николай Кучеренко</h3>
-              <p class="team-item__proffesion">Product Designer</p>
+              <h3 class="team__name">Николай Кучеренко</h3>
+              <p class="team__proffesion">Product Designer</p>
               <ul class="social">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -193,15 +226,22 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item team-item">
+            <li class="team__item">
               <img
-                src="./images/team/marta-stewart.jpg"
-                alt="Marta Stewart"
-                width="100%"
-                class="team-item__img"
+                srcset="
+                ./images/team/desktop/ivanova-270.jpg 270w,
+                ./images/team/desktop/ivanova-540.jpg 540w,
+                ./images/team/tablet/ivanova-354.jpg 354w,
+                ./images/team/tablet/ivanova-708.jpg 708w,
+                ./images/team/mobile/ivanova-450.jpg 450w,
+                ./images/team/mobile/ivanova-900.jpg 900w"
+                src="./images/team/desktop/ivanova-270.jpg"
+                alt="Ольга Иванова"
+                class="team__img"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 270px"
               />
-              <h3 class="team-item__name">Ольга Иванова</h3>
-              <p class="team-item__proffesion">Frontend Developer</p>
+              <h3 class="team__name">Ольга Иванова</h3>
+              <p class="team__proffesion">Frontend Developer</p>
               <ul class="social">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -233,15 +273,22 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item team-item">
+            <li class="team__item">
               <img
-                src="./images/team/robert-jakis.jpg"
-                alt="Robert Jakis"
-                width="100%"
-                class="team-item__img"
+                srcset="
+                ./images/team/desktop/schevchenko-270.jpg 270w,
+                ./images/team/desktop/schevchenko-540.jpg 540w,
+                ./images/team/tablet/schevchenko-354.jpg 354w,
+                ./images/team/tablet/schevchenko-708.jpg 708w,
+                ./images/team/mobile/schevchenko-450.jpg 450w,
+                ./images/team/mobile/schevchenko-900.jpg 900w"
+                src="./images/team/desktop/schevchenko-270.jpg"
+                alt="Андрей Шевченко"
+                class="team__img"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 270px"
               />
-              <h3 class="team-item__name">Андрей Шевченко</h3>
-              <p class="team-item__proffesion">Marketing</p>
+              <h3 class="team__name">Андрей Шевченко</h3>
+              <p class="team__proffesion">Marketing</p>
               <ul class="social">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -273,15 +320,22 @@
                 </li>
               </ul>
             </li>
-            <li class="team__item team-item">
+            <li class="team__item">
               <img
-                src="./images/team/martin-doe.jpg"
-                alt="Martin Doe"
-                width="100%"
-                class="team-item__img"
+                srcset="
+                ./images/team/desktop/nikolaev-270.jpg 270w,
+                ./images/team/desktop/nikolaev-540.jpg 540w,
+                ./images/team/tablet/nikolaev-354.jpg 354w,
+                ./images/team/tablet/nikolaev-708.jpg 708w,
+                ./images/team/mobile/nikolaev-450.jpg 450w,
+                ./images/team/mobile/nikolaev-900.jpg 900w"
+                src="./images/team/desktop/nikolaev-270.jpg"
+                alt="Иван Николаев"
+                class="team__img"
+                sizes="(min-width:1200px) 270px, (min-width:768px) 354px, (max-width:767px) 450px, 270px"
               />
-              <h3 class="team-item__name">Иван Николаев</h3>
-              <p class="team-item__proffesion">UI Designer</p>
+              <h3 class="team__name">Иван Николаев</h3>
+              <p class="team__proffesion">UI Designer</p>
               <ul class="social">
                 <li class="social__item">
                   <a href="" class="social__link">
@@ -371,7 +425,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__nav">
-          <div class="footer__wrapper">
+          <div class="address__wrapper">
             <a href="index.html" class="logo footer__logo"
               >Web<span style="color: white;"> Studio</span></a>
             <address class="address footer__address">
@@ -379,14 +433,12 @@
                 г. Киев, пр-т Леси Украинки, 26
               </p>
               <a href="mailto:info@devstudio.com" class="footer__mail"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com</a>
               <a href="tel:+380961111111" class="footer__number"
-                >+38 096 111 11 11</a
-              >
+                >+38 096 111 11 11</a>
             </address>
           </div>
-          <div class="social-wrapper">
+          <div class="social__wrapper">
             <p class="social__tittle">присоединяйтесь</p>
             <ul class="social">
               <li class="social__item">
@@ -419,23 +471,20 @@
               </li>
             </ul>
           </div>
-          <div class="footer__subscribe">
+          <div class="subscribe__wrapper">
             <p class="social__tittle">Подпишитесь на рассылку</p>
-            <form action="" method="post" class="subscribe__form">
+            <form action="" method="post">
               <label class="subscribe__field">
                 <input type="email" class="form__input" placeholder="E-mail">
                 <button type="submit" class="button">
                   Подписаться
-                  <svg class="subscribe-img">
+                  <svg class="subscribe__img">
                     <use href="./images/symbol-defs.svg#icon-send"></use>
                   </svg>
                 </button>
               </label>
             </form>
           </div>
-        </div>
-        <div class="copyright">
-          <p class="copyright__text">2020 | Developed by GoIT Students</p>
         </div>
       </div>
     </footer>
@@ -491,5 +540,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
